@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view class = 'container'>
+  <image src= '{{src}}' class = 'abc'></image>
+  <text>{{name}}</text>
+  <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+</view>
