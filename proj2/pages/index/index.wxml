@@ -1,0 +1,29 @@
+<view class = 'container'>
+  <picker mode = 'region' bindchange = 'changeRegion'>
+    <view>{{region}}</view>
+  </picker>
+  <text>{{weather.temp}}度 {{weather.text}}</text>
+  <image src = '/images/weather_icon_s2/{{weather.icon}}.png' mode = 'widthFix'></image>
+  <view class = 'detail'>
+    <view class = 'bar'>
+      <view class= 'box'>湿度</view>
+      <view class= 'box'>气压</view>
+      <view class= 'box'>能见度</view>
+    </view>
+    <view class = 'bar'>
+      <view class= 'box'>{{weather.humidity}}%</view>
+      <view class= 'box'>{{weather.pressure}}hPa</view>
+      <view class= 'box'>{{weather.vis}}Km</view>
+    </view>
+    <view class = 'bar'>
+      <view class= 'box'>风向</view>
+      <view class= 'box'>风速</view>
+      <view class= 'box'>风力</view>
+    </view>
+    <view class = 'bar'>
+      <view class= 'box'>{{weather.windDir}}</view>
+      <view class= 'box'>{{weather.windSpeed}}Km/h</view>
+      <view class= 'box'>{{weather.windScale}}级</view>
+    </view>
+  </view>
+</view>
